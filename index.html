@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tetris</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="game game__body">
+      <div class="game__field">
+        <canvas id="canvas"></canvas>
+      </div>
+      <div class="game__info">
+        <p class="game__time">Время: <span id="time">00:00</span> </p>
+        <p class="game__score">Счет: <span id="score">0</span> </p>
+        <div class="game__next next">
+          <p class="next__title">Следующая фигура</p>
+          <canvas id="nextFigureCanvas" width="0" height="0"></canvas>
+        </div>
+        <div class="game__instruction">
+          <p>Управление:</p>
+          <p>⬆️ - перевернуть</p>
+          <p>⬇️ - ускориться</p>
+          <p>⬅️ - движение вправо</p>
+          <p>➡️ - движение вправо</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Extra script -->
+  <script src="./src/Figure.js"></script>
+  <script src="./src/NextFigure.js"></script>
+  <script src="./src/Game.js"></script>
+
+  <!-- Maint script -->
+  <script src="./main.js"></script>
+</body>
+</html>

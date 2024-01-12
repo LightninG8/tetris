@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.game__body {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  border: 1px solid gray;
+
+}
+
+.game__info {
+  padding: 10px;
+  position: relative;
+
+}
+
+.game__score {
+  margin-top: 5px;
+}
+
+.game__next {
+  margin-top: 5px;
+}
+
+.game__instruction {
+  position: absolute;
+
+  left: 10px;
+  right: 10px;
+  bottom: 20px;
+}
+#canvas {
+  /* border: 1px solid gray; */
+}
